@@ -70,8 +70,8 @@ A metodologia adotada foi estruturada em diversas etapas, abrangendo o pré-proc
 - **Visualização:**  
   Foi construído um gráfico de dispersão 3D para identificar padrões entre temperatura, pH e atividade enzimática.
 
-  **Placeholder para Figura 1:**  
-  `![Figura 1: Distribuição dos dados em gráfico 3D](caminho/para/imagem_1)`
+  ![Figura 1: Distribuição dos dados em gráfico 3D](https://github.com/user-attachments/assets/b14d4695-c745-422b-ac1f-0d3360a98c1e)
+
 
 #### A.2. Classificação
 
@@ -88,8 +88,7 @@ A metodologia adotada foi estruturada em diversas etapas, abrangendo o pré-proc
 - **Visualização:**  
   Foi criado um gráfico 3D, utilizando cores distintas para cada classe, a fim de analisar a separabilidade dos dados.
 
-  **Placeholder para Figura 4:**  
-  `![Figura 4: Distribuição dos dados dos sensores e expressões em gráfico 3D](caminho/para/imagem_4)`
+  ![Figura 2: Distribuição dos dados dos sensores e expressões em gráfico 3D](https://github.com/user-attachments/assets/c804a567-4fe7-46dc-bbcb-dcd3619580aa)
 
 ### B. Implementação dos Modelos
 
@@ -210,8 +209,7 @@ Foram utilizados dados do arquivo `atividade_enzimatica.csv`. A visualização e
   1. **MQO Tradicional:**  
      - Estimativa de β pela expressão $$ (X^T X)^{-1} X^T y $$.
      
-     **Placeholder para Figura 2:**  
-     `![Figura 2: Superfície de regressão (vermelho) ajustada pelo MQO tradicional com dados reais em azul](caminho/para/imagem_2)`
+     ![Figura 3: Superfície de regressão (vermelho) ajustada pelo MQO tradicional com dados reais em azul](https://github.com/user-attachments/assets/b9e65e79-9d72-4449-bf62-f3b6ffad2b0d)
 
   2. **MQO Regularizado (Tikhonov):**  
      - Teste dos valores de λ = {0, 0.25, 0.5, 0.75, 1}.
@@ -222,16 +220,15 @@ Foram utilizados dados do arquivo `atividade_enzimatica.csv`. A visualização e
   3. **Média dos Valores Observáveis:**  
      - Predição constante utilizando a média de **y**.
      
-     **Placeholder para Figura 3:**  
-     `![Figura 3: Superfície de regressão constante ajustada pela média dos valores observáveis com dados reais em azul](caminho/para/imagem_3)`
+     ![Figura 4: Superfície de regressão constante ajustada pela média dos valores observáveis com dados reais em azul](https://github.com/user-attachments/assets/f08f946a-6a5b-4328-8d46-c6b22ca3c6f3)
 
 #### A.2. Validação via Monte Carlo e Análise dos RSS
 
 - Realizou-se a validação com 500 rodadas, particionando 80% dos dados para treinamento e 20% para teste.
 - Para cada modelo, foram calculadas as estatísticas do RSS (média, desvio-padrão, máximo e mínimo).
 
-**Placeholder para Tabela 1:**  
-`<!-- Insira aqui a Tabela 1 com os resultados dos RSS para cada modelo -->`
+![Tabela 1](https://github.com/user-attachments/assets/e806a4ea-ebc3-400a-aa1e-471b3774bee4)
+
 
 #### A.3. Discussão dos Resultados de Regressão
 
@@ -252,8 +249,7 @@ Foram utilizados dados do arquivo `atividade_enzimatica.csv`. A visualização e
 
 Utilizou-se o arquivo `EMGsDataset.csv` para a classificação. A visualização dos dados em um gráfico 3D evidenciou que as classes não são linearmente separáveis.
 
-**Placeholder para Figura 4:**  
-`![Figura 4: Gráfico 3D com distribuição dos dados dos sensores e expressões](caminho/para/imagem_4)`
+![Figura 5: Gráfico 3D com distribuição dos dados dos sensores e expressões](https://github.com/user-attachments/assets/83604df6-0060-4b7c-8cc7-0944289e9b73)
 
 #### B.2. Modelos de Classificação Implementados
 
@@ -262,39 +258,33 @@ Os seguintes modelos foram implementados:
 1. **MQO para Classificação:**  
    - Resultados com arredondamento dos valores preditos.
 
-   **Placeholder para Figura 5:**  
-   `![Figura 5: Resultados do MQO para classificação com dados reais (azul) e predições (vermelho)](caminho/para/imagem_5)`
+   ![Figura 6: Resultados do MQO para classificação com dados reais (azul) e predições (vermelho)](https://github.com/user-attachments/assets/891002fe-5c9b-49ad-a8c6-7cae72f53ebb)
 
 2. **Classificador Gaussiano Tradicional:**  
    
-   **Placeholder para Figura 6:**  
-   `![Figura 6: Resultados do Classificador Gaussiano Tradicional com dados reais (azul) e predições (vermelho)](caminho/para/imagem_6)`
+   ![Figura 7: Resultados do Classificador Gaussiano Tradicional com dados reais (azul) e predições (vermelho)](https://github.com/user-attachments/assets/560db5cd-db0d-42bf-acfc-3eb057a697f0)
 
 3. **Classificador Gaussiano com Covariâncias Iguais:**  
    
-   **Placeholder para Figura 7:**  
-   `![Figura 7: Resultados do Classificador Gaussiano com Covariâncias Iguais](caminho/para/imagem_7)`
+   ![Figura 8: Resultados do Classificador Gaussiano com Covariâncias Iguais](https://github.com/user-attachments/assets/a577c5cf-1d5c-4db7-9e95-95efef92d014)
 
 4. **Classificador Gaussiano com Matriz Agregada:**  
    
-   **Placeholder para Figura 8:**  
-   `![Figura 8: Resultados do Classificador Gaussiano com Matriz Agregada](caminho/para/imagem_8)`
+   ![Figura 9: Resultados do Classificador Gaussiano com Matriz Agregada](https://github.com/user-attachments/assets/5c1f0186-ac84-42d9-a4c2-24309ce6966d)
 
 5. **Classificador Gaussiano Regularizado (Friedman):**  
    - Teste de λ = {0, 0.25, 0.5, 0.75, 1}.
 
 6. **Classificador de Bayes Ingênuo:**  
    
-   **Placeholder para Figura 9:**  
-   `![Figura 9: Resultados do Classificador de Bayes Ingênuo](caminho/para/imagem_9)`
+   ![Figura 10: Resultados do Classificador de Bayes Ingênuo](https://github.com/user-attachments/assets/b76c4517-234b-4a30-a85c-b28c8256b256)
 
 #### B.3. Validação via Monte Carlo e Acurácias
 
 - Foram realizadas 500 simulações, utilizando 80% dos dados para treinamento e 20% para teste.
 - Para cada modelo, foram calculadas as estatísticas das acurácias (média, desvio-padrão, máximo e mínimo).
 
-**Placeholder para Tabela 2:**  
-`<!-- Insira aqui a Tabela 2 com os resultados das acurácias para cada modelo -->`
+![Tabela 2](https://github.com/user-attachments/assets/59420994-9ce1-4509-96f4-f8a88feb8e9a)
 
 #### B.4. Discussão dos Resultados de Classificação
 
