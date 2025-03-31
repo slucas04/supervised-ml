@@ -71,7 +71,7 @@ A metodologia adotada foi estruturada em diversas etapas, abrangendo o pré-proc
   Foi construído um gráfico de dispersão 3D para identificar padrões entre temperatura, pH e atividade enzimática.
 
   <div align="center">
-    <img src="https://github.com/user-attachments/assets/b14d4695-c745-422b-ac1f-0d3360a98c1e" alt="Figura 1: Distribuição dos dados em gráfico 3D" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+    <img src="https://github.com/user-attachments/assets/b14d4695-c745-422b-ac1f-0d3360a98c1e" alt="Figura 1: Distribuição dos dados em gráfico 3D" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
   </div>
 
 #### A.2. Classificação
@@ -90,7 +90,7 @@ A metodologia adotada foi estruturada em diversas etapas, abrangendo o pré-proc
   Foi criado um gráfico 3D, utilizando cores distintas para cada classe, a fim de analisar a separabilidade dos dados.
 
   <div align="center">
-    <img src="https://github.com/user-attachments/assets/c804a567-4fe7-46dc-bbcb-dcd3619580aa" alt="Figura 2: Distribuição dos dados dos sensores e expressões em gráfico 3D" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+    <img src="https://github.com/user-attachments/assets/c804a567-4fe7-46dc-bbcb-dcd3619580aa" alt="Figura 2: Distribuição dos dados dos sensores e expressões em gráfico 3D" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
   </div>
 
 ### B. Implementação dos Modelos
@@ -213,7 +213,7 @@ Foram utilizados dados do arquivo `atividade_enzimatica.csv`. A visualização e
      - Estimativa de β pela expressão $$ (X^T X)^{-1} X^T y $$.
      
      <div align="center">
-       <img src="https://github.com/user-attachments/assets/b9e65e79-9d72-4449-bf62-f3b6ffad2b0d" alt="Figura 3: Superfície de regressão (vermelho) ajustada pelo MQO tradicional com dados reais em azul" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+       <img src="https://github.com/user-attachments/assets/b9e65e79-9d72-4449-bf62-f3b6ffad2b0d" alt="Figura 3: Superfície de regressão (vermelho) ajustada pelo MQO tradicional com dados reais em azul" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
      </div>
 
   2. **MQO Regularizado (Tikhonov):**  
@@ -226,7 +226,7 @@ Foram utilizados dados do arquivo `atividade_enzimatica.csv`. A visualização e
      - Predição constante utilizando a média de **y**.
      
      <div align="center">
-       <img src="https://github.com/user-attachments/assets/f08f946a-6a5b-4328-8d46-c6b22ca3c6f3" alt="Figura 4: Superfície de regressão constante ajustada pela média dos valores observáveis com dados reais em azul" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+       <img src="https://github.com/user-attachments/assets/f08f946a-6a5b-4328-8d46-c6b22ca3c6f3" alt="Figura 4: Superfície de regressão constante ajustada pela média dos valores observáveis com dados reais em azul" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
      </div>
 
 #### A.2. Validação via Monte Carlo e Análise dos RSS
@@ -235,7 +235,7 @@ Foram utilizados dados do arquivo `atividade_enzimatica.csv`. A visualização e
 - Para cada modelo, foram calculadas as estatísticas do RSS (média, desvio-padrão, máximo e mínimo).
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/e806a4ea-ebc3-400a-aa1e-471b3774bee4" alt="Tabela 1" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+  <img src="https://github.com/user-attachments/assets/e806a4ea-ebc3-400a-aa1e-471b3774bee4" alt="Tabela 1" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
 </div>
 
 #### A.3. Discussão dos Resultados de Regressão
@@ -258,7 +258,7 @@ Foram utilizados dados do arquivo `atividade_enzimatica.csv`. A visualização e
 Utilizou-se o arquivo `EMGsDataset.csv` para a classificação. A visualização dos dados em um gráfico 3D evidenciou que as classes não são linearmente separáveis.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/83604df6-0060-4b7c-8cc7-0944289e9b73" alt="Figura 5: Gráfico 3D com distribuição dos dados dos sensores e expressões" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+  <img src="https://github.com/user-attachments/assets/83604df6-0060-4b7c-8cc7-0944289e9b73" alt="Figura 5: Gráfico 3D com distribuição dos dados dos sensores e expressões" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
 </div>
 
 #### B.2. Modelos de Classificação Implementados
@@ -269,25 +269,25 @@ Os seguintes modelos foram implementados:
    - Resultados com arredondamento dos valores preditos.
 
    <div align="center">
-     <img src="https://github.com/user-attachments/assets/891002fe-5c9b-49ad-a8c6-7cae72f53ebb" alt="Figura 6: Resultados do MQO para classificação com dados reais (azul) e predições (vermelho)" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+     <img src="https://github.com/user-attachments/assets/891002fe-5c9b-49ad-a8c6-7cae72f53ebb" alt="Figura 6: Resultados do MQO para classificação com dados reais (azul) e predições (vermelho)" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
    </div>
 
 2. **Classificador Gaussiano Tradicional:**  
    
    <div align="center">
-     <img src="https://github.com/user-attachments/assets/560db5cd-db0d-42bf-acfc-3eb057a697f0" alt="Figura 7: Resultados do Classificador Gaussiano Tradicional com dados reais (azul) e predições (vermelho)" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+     <img src="https://github.com/user-attachments/assets/560db5cd-db0d-42bf-acfc-3eb057a697f0" alt="Figura 7: Resultados do Classificador Gaussiano Tradicional com dados reais (azul) e predições (vermelho)" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
    </div>
 
 3. **Classificador Gaussiano com Covariâncias Iguais:**  
    
    <div align="center">
-     <img src="https://github.com/user-attachments/assets/a577c5cf-1d5c-4db7-9e95-95efef92d014" alt="Figura 8: Resultados do Classificador Gaussiano com Covariâncias Iguais" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+     <img src="https://github.com/user-attachments/assets/a577c5cf-1d5c-4db7-9e95-95efef92d014" alt="Figura 8: Resultados do Classificador Gaussiano com Covariâncias Iguais" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
    </div>
 
 4. **Classificador Gaussiano com Matriz Agregada:**  
    
    <div align="center">
-     <img src="https://github.com/user-attachments/assets/5c1f0186-ac84-42d9-a4c2-24309ce6966d" alt="Figura 9: Resultados do Classificador Gaussiano com Matriz Agregada" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+     <img src="https://github.com/user-attachments/assets/5c1f0186-ac84-42d9-a4c2-24309ce6966d" alt="Figura 9: Resultados do Classificador Gaussiano com Matriz Agregada" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
    </div>
 
 5. **Classificador Gaussiano Regularizado (Friedman):**  
@@ -296,7 +296,7 @@ Os seguintes modelos foram implementados:
 6. **Classificador de Bayes Ingênuo:**  
    
    <div align="center">
-     <img src="https://github.com/user-attachments/assets/b76c4517-234b-4a30-a85c-b28c8256b256" alt="Figura 10: Resultados do Classificador de Bayes Ingênuo" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+     <img src="https://github.com/user-attachments/assets/b76c4517-234b-4a30-a85c-b28c8256b256" alt="Figura 10: Resultados do Classificador de Bayes Ingênuo" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
    </div>
 
 #### B.3. Validação via Monte Carlo e Acurácias
@@ -305,7 +305,7 @@ Os seguintes modelos foram implementados:
 - Para cada modelo, foram calculadas as estatísticas das acurácias (média, desvio-padrão, máximo e mínimo).
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/59420994-9ce1-4509-96f4-f8a88feb8e9a" alt="Tabela 2" style="display: block; margin-left: auto; margin-right: auto; width:600px;" />
+  <img src="https://github.com/user-attachments/assets/59420994-9ce1-4509-96f4-f8a88feb8e9a" alt="Tabela 2" style="display: block; margin-left: auto; margin-right: auto; width:300px;" />
 </div>
 
 #### B.4. Discussão dos Resultados de Classificação
