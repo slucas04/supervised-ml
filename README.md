@@ -3,7 +3,6 @@
 **Autor:** Samuel Lucas de Araujo Farias  
 **Curso:** Ciência da Computação  
 **Universidade:** Universidade de Fortaleza  
-**Matrícula:** 2214673
 
 ---
 
@@ -18,6 +17,26 @@ Na etapa de classificação, o trabalho utiliza sinais eletromiográficos captad
 ## Palavras-Chave
 
 MQO, regressão, classificadores gaussianos
+
+---
+
+## Sumário
+
+- [Introdução](#i-introdução)
+- [Metodologia](#ii-metodologia)
+  - [Descrição e Organização dos Dados](#a-descrição-e-organização-dos-dados)
+    - [Regressão](#a1-regressão)
+    - [Classificação](#a2-classificação)
+  - [Implementação dos Modelos](#b-implementação-dos-modelos)
+    - [Modelos de Regressão](#b1-modelos-de-regressão)
+    - [Modelos de Classificação](#b2-modelos-de-classificação)
+  - [Validação via Simulações Monte Carlo](#c-validação-via-simulações-monte-carlo)
+  - [Ambiente de Implementação e Ferramentas](#d-ambiente-de-implementação-e-ferramentas)
+  - [Critérios de Avaliação e Apresentação dos Resultados](#e-critérios-de-avaliação-e-apresentação-dos-resultados)
+- [Resultados](#iii-resultados)
+  - [Regressão](#a-resultados-da-regressão)
+  - [Classificação](#b-resultados-da-classificação)
+- [Conclusão](#iv-conclusão)
 
 ---
 
@@ -301,24 +320,3 @@ Este trabalho demonstrou a eficácia das técnicas de regressão e classificaç�
   Os classificadores baseados em modelos gaussianos e o classificador de Bayes Ingênuo alcançaram acurácias significativamente maiores que o MQO adaptado para classificação, ressaltando a importância das abordagens probabilísticas em problemas de dados não linearmente separáveis.
 
 A validação por meio de simulações Monte Carlo (500 rodadas) reforçou a robustez dos resultados, permitindo uma análise estatística detalhada dos modelos e evidenciando a influência de hiperparâmetros como os valores de λ. Este estudo fornece diretrizes valiosas para a implementação e avaliação de modelos preditivos e abre caminho para investigações futuras na área de aprendizado supervisionado.
-
----
-
-## Sumário
-
-- [Introdução](#i-introdução)
-- [Metodologia](#ii-metodologia)
-  - [Descrição e Organização dos Dados](#a-descrição-e-organização-dos-dados)
-    - [Regressão](#a1-regressão)
-    - [Classificação](#a2-classificação)
-  - [Implementação dos Modelos](#b-implementação-dos-modelos)
-    - [Modelos de Regressão](#b1-modelos-de-regressão)
-    - [Modelos de Classificação](#b2-modelos-de-classificação)
-  - [Validação via Simulações Monte Carlo](#c-validação-via-simulações-monte-carlo)
-  - [Ambiente de Implementação e Ferramentas](#d-ambiente-de-implementação-e-ferramentas)
-  - [Critérios de Avaliação e Apresentação dos Resultados](#e-critérios-de-avaliação-e-apresentação-dos-resultados)
-- [Resultados](#iii-resultados)
-  - [Regressão](#a-resultados-da-regressão)
-  - [Classificação](#b-resultados-da-classificação)
-- [Conclusão](#iv-conclusão)
-
